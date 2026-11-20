@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sai Path</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:ital@0;1&family=Noto+Sans+Devanagari:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark gu">साई</span>
+      <div><div class="brand-name">Sai Path</div><div class="brand-sub">Shraddha · Saburi</div></div>
+    </div>
+    <nav class="tabs" id="tabs">
+      <button data-tab="home">🏠 <span>Home</span></button>
+      <button data-tab="lessons">📚 <span>Lessons</span></button>
+      <button data-tab="timeline">🕰️ <span>Timeline</span></button>
+      <button data-tab="teachings">🪔 <span>Teachings</span></button>
+      <button data-tab="people">👥 <span>People & Places</span></button>
+      <button data-tab="practice">🎯 <span>Practice</span></button>
+      <button data-tab="reflect">📝 <span>Reflect</span></button>
+      <button data-tab="progress">📈 <span>Progress</span></button>
+    </nav>
+    <div class="stats-pill">
+      <span title="Day streak">🔥 <b id="streak">0</b></span>
+      <span title="Experience points">⭐ <b id="xp">0</b></span>
+      <span id="save-state" title="">💾</span>
+    </div>
+  </header>
+
+  <main id="view" class="view"></main>
+
+  <div id="modal" class="modal hidden"><div class="modal-card" id="modal-card"></div></div>
+  <div id="toast" class="toast"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/practice.js"></script>
+  <script src="js/reflect.js"></script>
+  <script>App.start();</script>
+</body>
+</html>

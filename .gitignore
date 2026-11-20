@@ -1,0 +1,6 @@
+# personal progress & reflections (saved by server.py)
+progress.json
+progress.json.tmp
+__pycache__/
+.DS_Store
+Thumbs.db
